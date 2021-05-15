@@ -20,9 +20,15 @@ The script requires a vcf file.  The vcf file can be compressed with gzip.  This
 <!-- usage -->
 ## Usage
 
-python VCFsharedAlleles.v1.0.py -vcf file.vcf -pop populationMap.txt
+Find Pairwise:
+python VCFsharedAlleles.v1.0.py -vcf file.vcf -pop populationMap.txt > pairwiseComparison.txt
 
 To see the usage and get futher information: python VCFsharedAlleles.v1.0.py -h
+
+See population values:
+python AnalyzeSharedAlleles.v1.0.py -file pairwiseComparison.txt -pop populationMap.txt
+
+To see the usage and get further information: python AnalyzeSharedAlleles.v1.0.py -h
 
 <!-- license -->
 ## License 
